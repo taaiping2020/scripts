@@ -1,5 +1,7 @@
 #!/bin/bash
 
+yes Y | apt-get update
+
 echo 'download services artifacts'
 
 yes Y | apt-get install unzip -y
