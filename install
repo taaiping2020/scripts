@@ -20,3 +20,15 @@ yes Y | apt-get install supervisor -y
 
 echo 'install supervisor'
 
+cat >> /etc/supervisor/supervisord.conf
+
+[inet_http_server]
+port=0.0.0.0:9001
+username=admin
+password=xboxone
+
+
+^D
+
+echo 'supervisor restart'
+service supervisor restart
