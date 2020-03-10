@@ -8,7 +8,7 @@ yes Y | apt-get install polipo -y
 
 mkdir /usr/local/etc/polipo/
 
-wget -O /usr/local/etc/polipo/config https://raw.githubusercontent.com/bosxixi/scripts/master/src/polipo.config
+wget -O /usr/local/etc/polipo/config https://fs.scorpioplayer.com/dl/scripts/polipo.config
 
 sudo ln -sfv /usr/local/etc/polipo/config /etc/polipo/config
 
@@ -24,7 +24,7 @@ yes Y | apt-get install supervisor -y
 
 echo 'install supervisor'
 
-wget -O /etc/supervisor/supervisord.conf https://raw.githubusercontent.com/bosxixi/scripts/master/src/supervisor.config
+wget -O /etc/supervisor/supervisord.conf https://fs.scorpioplayer.com/dl/scripts/supervisor.config
 
 echo 'supervisor restart'
 service supervisor restart
@@ -35,9 +35,9 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 echo 'dwonloading services...'
 
 curl http://youtubedl.scorpioplayer.com/dl/ms.zip --output /home/ms.zip
-wget -O /etc/ss.json https://raw.githubusercontent.com/bosxixi/scripts/master/ss.json
-wget -O /etc/supervisor/conf.d/ss.conf https://raw.githubusercontent.com/bosxixi/scripts/master/src/services/ss.conf
-wget -O /etc/supervisor/conf.d/ms.conf https://raw.githubusercontent.com/bosxixi/scripts/master/src/services/ms.conf
+wget -O /etc/ss.json https://fs.scorpioplayer.com/dl/scripts/ss.json
+wget -O /etc/supervisor/conf.d/ss.conf https://fs.scorpioplayer.com/dl/scripts/ss.conf
+wget -O /etc/supervisor/conf.d/ms.conf https://fs.scorpioplayer.com/dl/scripts/ms.conf
 
 yes Y | unzip ms.zip -d /home/ms
 
