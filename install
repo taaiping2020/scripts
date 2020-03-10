@@ -1,0 +1,13 @@
+#!/bin/bash
+  
+yes Y | apt-get install polipo -y
+
+mkdir /usr/local/etc/polipo/
+
+curl -o /usr/local/etc/polipo/config https://raw.githubusercontent.com/bosxixi/scripts/master/polipo.config
+
+sudo ln -sfv /usr/local/etc/polipo/config /etc/polipo/config
+
+service polipo stop
+
+service polipo start
