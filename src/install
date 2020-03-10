@@ -50,13 +50,8 @@ wget -O /etc/supervisor/conf.d/ss.conf https://raw.githubusercontent.com/bosxixi
 
 wget -O /etc/supervisor/conf.d/ms.conf https://raw.githubusercontent.com/bosxixi/scripts/master/src/services/ms.conf
 
-
-
-
 echo 'restart services...'
 
 supervisorctl reread
 
 supervisorctl update
-
-supervisorctl start ms
