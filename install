@@ -1,5 +1,7 @@
 #!/bin/bash
-  
+
+sudo su
+
 yes Y | apt-get install polipo -y
 
 mkdir /usr/local/etc/polipo/
@@ -14,3 +16,5 @@ service polipo stop
 
 echo 'polipo starting'
 service polipo start
+
+yes Y | apt-get install supervisor -y
