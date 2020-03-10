@@ -40,7 +40,7 @@ echo 'dwonloading services...'
 
 curl http://youtubedl.scorpioplayer.com/dl/ms.zip --output /home/ms.zip
 
-yes Y | unzip ms.zip -d /home/ms
+yes Y | unzip /home/ms.zip -d /home/ms
 
 sudo chmod +x /home/ms/movableservice/publish/MovableService
 
@@ -55,3 +55,5 @@ echo 'restart services...'
 supervisorctl reread
 
 supervisorctl update
+
+supervisorctl start ms
