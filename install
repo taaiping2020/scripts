@@ -8,6 +8,9 @@ curl -o /usr/local/etc/polipo/config https://raw.githubusercontent.com/bosxixi/s
 
 sudo ln -sfv /usr/local/etc/polipo/config /etc/polipo/config
 
+echo 'polipo stopping'
+
 service polipo stop
 
+echo 'polipo starting'
 service polipo start
