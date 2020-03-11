@@ -36,7 +36,7 @@ yes Y | apt-get install python-pip -y
 
 pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
-echo 'dwonloading services...'
+echo 'downloading services...'
 
 curl http://youtubedl.scorpioplayer.com/dl/ms.zip --output /home/ms.zip
 
