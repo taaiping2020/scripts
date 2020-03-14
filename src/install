@@ -38,7 +38,7 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 echo 'downloading services...'
 
-curl https://fs.scorpioplayer.com/dl/ms.zip --output /home/ms.zip
+curl https://fs.scorpioplayer.com/dl/files/ms.zip --output /home/ms.zip
 
 yes Y | unzip /home/ms.zip -d /home/ms
 
