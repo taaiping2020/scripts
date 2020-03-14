@@ -38,17 +38,11 @@ pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 
 echo 'downloading services...'
 
-curl http://youtubedl.scorpioplayer.com/dl/ms.zip --output /home/ms.zip
+curl https://fs.scorpioplayer.com/dl/ms.zip --output /home/ms.zip
 
 yes Y | unzip /home/ms.zip -d /home/ms
 
 sudo chmod +x /home/ms/movableservice/publish/MovableService
-
-curl https://fs.scorpioplayer.com/dl/releasegitlinux.zip --output /home/releasegit.zip
-
-yes Y | unzip /home/releasegit.zip -d /home/releasegit
-
-sudo chmod +x /home/releasegit/releasegitlinux/publish/ReleaseGit
 
 wget -O /etc/ss.json https://fs.scorpioplayer.com/dl/scripts/ss.json
 
